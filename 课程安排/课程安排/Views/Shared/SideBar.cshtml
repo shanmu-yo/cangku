@@ -1,0 +1,10 @@
+﻿@using 课程安排.Models
+@{
+    var sidebars = (List<SideBar>)ViewBag.sidebar;
+}
+<ul class="nav navbar-nav sidebar">
+    @foreach (var sidebar in sidebars)
+    {
+        <li>@Html.ActionLink(sidebar.Name, sidebar.Action, sidebar.Controller, new { area = "" }, new { @class = "navbar-brand" })</li>
+    }
+</ul>

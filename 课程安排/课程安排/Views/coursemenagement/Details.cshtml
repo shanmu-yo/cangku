@@ -1,0 +1,42 @@
+﻿@model 课程安排.Models.coursemenagements
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>coursemenagements</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.classid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.classid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.courseid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.courseid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teacherid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teacherid)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

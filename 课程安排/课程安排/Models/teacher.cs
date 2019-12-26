@@ -11,10 +11,14 @@ namespace 课程安排.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class teacher
     {
         public int id { get; set; }
+        [Display(Name = "教师姓名")]
         public string name { get; set; }
+        
+
     }
 }

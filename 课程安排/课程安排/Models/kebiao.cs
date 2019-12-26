@@ -11,10 +11,12 @@ namespace 课程安排.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class kebiao
     {
         public int Id { get; set; }
+        [Display(Name = "科目")]
         public string name { get; set; }
     }
 }
